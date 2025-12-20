@@ -16,8 +16,8 @@ plot(x, u_noisy, 'r', 'LineWidth', 1.5);hold on;
 plot(x, u, 'b', 'LineWidth', 1.5); 
 
 xlabel('x'); ylabel('Amplitude');
-legend('u(x) original','u(x) avec bruit');
-title('Signal sinus bruité');
+legend('u(x) original','u(x) with noise');
+title('Noisy sine signal');
 grid on;
 
 subplot(2,1,2);
@@ -25,6 +25,6 @@ plot(x, v_noisy, 'r', 'LineWidth', 1.5);hold on;
 plot(x, v, 'b', 'LineWidth', 1.5); 
 
 xlabel('x'); ylabel('Amplitude');
-legend('v(x) original','v(x) avec bruit');
-title('Signal cosinus bruité');
+legend('v(x) original','v(x) with noise');
+title('Noisy cosine signal');
 grid on;

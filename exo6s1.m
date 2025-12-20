@@ -8,5 +8,5 @@ end
 for n = 1:12
     y = sin(2*pi*F(n)*t);  
     sound(y, Fs);           
-    pause(duree);           
+    pause(0.5);           
 end

@@ -5,4 +5,6 @@ f1 = 500;
 f2 = 1000;
 % Construction du signal complexe
 x = sin(2*pi*f0*t) + 0.7*sin(2*pi*f1*t) + 0.7*sin(2*pi*f2*t);
-sound(x, Fe);  
+sound(x, Fe); 
+
+plot(x,t);

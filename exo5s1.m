@@ -7,9 +7,20 @@ Y_mult = 0.6*U + 0.4*V;
 Y_trunc = U .* (abs(x)<=5); % Troncature
 Y_rev = fliplr(U);       % Reverse
 
-stem(x, Y_add); title('Addition');
-figure, stem(x, Y_mult); title('Multiplication');
-figure, stem(x, Y_trunc); title('Troncature');
-figure, stem(x, Y_rev); title('Reverse');
+figure;  
+subplot(2,2,1)
+stem(x, Y_add)
+title('Addition')
 
+subplot(2,2,2)
+stem(x, Y_mult)
+title('Multiplication')
+
+subplot(2,2,3)
+stem(x, Y_trunc)
+title('Troncature')
+
+subplot(2,2,4)
+stem(x, Y_rev)
+title('Reverse')
 
